@@ -19,7 +19,7 @@ int main(){
     auto all_nodes = [](Graph& gr){
         for (Node n : gr.getNodes())
         {
-            std::cout << n.getValue() << std::endl;
+            std::cout << n.value() << std::endl;
         }
     };
 

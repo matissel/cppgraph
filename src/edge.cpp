@@ -1,19 +1,19 @@
 #include "../include/node.h"
 #include "../include/edge.h"
 
-Node Edge::getFrom(){
-    return from;
+Node Edge::from(){
+    return from_;
 }
-Node Edge::getTo(){
-    return to;
-}
-
-int32_t Edge::getFromValue(){
-    return from.getValue();
+Node Edge::to(){
+    return to_;
 }
 
-int32_t Edge::getToValue(){
-    return to.getValue();
+int32_t Edge::fromValue(){
+    return from_.value();
 }
 
-Edge::Edge(Node from, Node to):from(from), to(to){}
+int32_t Edge::toValue(){
+    return to_.value();
+}
+
+Edge::Edge(Node from, Node to):from_(from), to_(to){}

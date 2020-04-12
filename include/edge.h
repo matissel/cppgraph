@@ -1,13 +1,14 @@
 
 class Edge
 {
-    Node from;
-    Node to;
+    Node from_;
+    Node to_;
 
     public:
-        Node getFrom();
-        Node getTo();
-        int32_t getFromValue();
-        int32_t getToValue();
+        Node from();
+        Node to();
+        int32_t fromValue();
+        int32_t toValue();
         Edge(Node from, Node to);
+
 };
